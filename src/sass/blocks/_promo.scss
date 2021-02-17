@@ -11,7 +11,7 @@
         position: relative;
         z-index: 2;
         padding-left: 10px;
-        @include before_cirle;
+        @include before_circle;
     }
 	&__btns {
 		display: flex;
