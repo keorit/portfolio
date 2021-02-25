@@ -37,7 +37,7 @@
     width: 1140px;
     margin: 0 auto;
 }
-h1, h2, p {
+h1, h2, h3, h4, p {
     margin-bottom: 0;
 }
 
@@ -45,7 +45,7 @@ h1, h2, p {
     width: 60px;
     height: 3px;
     background-color: $main-color;
-    margin-top: 25px;
+    margin: 25px auto 0 auto;
 }
 
 @import 'blocks/promo';
@@ -53,3 +53,9 @@ h1, h2, p {
 @import 'blocks/buttons';
 @import 'blocks/sidepanel';
 @import 'blocks/about';
+@import 'blocks/menu';
+@import 'blocks/resume';
+@import 'blocks/skills';
+
+
+

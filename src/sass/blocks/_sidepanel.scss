@@ -25,4 +25,11 @@
 			transform: rotate(-90deg) translate(-30%, -250%);
 		}
 	}
+	&__link {
+		&:hover {
+			svg path {
+				fill: $main-color;
+			}
+		}
+	}
 }

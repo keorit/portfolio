@@ -1,0 +1,93 @@
+.resume {
+	padding-top: 120px;
+	&__title {
+		position: relative;
+		text-align: center;
+		@include before_circle;
+		&:before {
+			top: -6px;
+			left: 50%;
+			transform: translateX(-50%);
+		}
+	}
+	&__subtitle {
+		text-align: center;
+	}
+	&__wrapper {
+		display: grid;
+		grid-template-columns: repeat(2, 425px);
+		column-gap: 136px;
+		padding: 60px 65px 0 65px;
+	}
+	&__column {
+		ul {
+			list-style-type: none;
+			li {
+				position: relative;
+				&:after {
+					content: "";
+					position: absolute;
+					top: -8px;
+					left: 0;
+					width: 1px;
+					height: calc(100% + 8px);
+					background-color: #000;
+				}
+			}
+		}
+		&-title {
+			padding-left: 35px;
+			position: relative;
+			&:before {
+				content: "";
+				position: absolute;
+				top: 50%;
+				transform: translateY(-50%);
+				left: -7px;
+				width: 15px;
+				height: 15px;
+				background-color: $main-color;
+				border-radius: 100%;
+			}
+		}
+	}
+	&__item {
+		position: relative;
+		&::before {
+			content: "";
+			height: 1px;
+			width: 43px;
+			position: absolute;
+			background-color: #000;
+			top: 68px;
+			left: 0;
+		}
+		&-head {
+			padding: 45px 0 0 100px;
+			position: relative;
+		}
+		&-icon {
+			position: absolute;
+			top: 50px;
+			left: 42px;
+			@include before_circle;
+			img {
+				position: absolute;
+				left: 17px;
+				top: 14px;
+			}
+		}
+		&-body {
+			padding-left: 43px;
+			margin-top: 12px;
+			font-weight: 500;
+			font-size: 12px;
+			line-height: 18px;
+		}
+		&-location {
+			font-weight: 500;
+			font-size: 12px;
+			line-height: 18px;
+		}
+	}
+}
