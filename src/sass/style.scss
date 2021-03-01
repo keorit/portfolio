@@ -37,7 +37,7 @@
     width: 1140px;
     margin: 0 auto;
 }
-h1, h2, h3, h4, p {
+h1, h2, h3, h4, p, label {
     margin-bottom: 0;
 }
 
@@ -57,6 +57,8 @@ h1, h2, h3, h4, p {
 @import 'blocks/resume';
 @import 'blocks/skills';
 @import 'blocks/portfolio';
+@import 'blocks/prices';
+@import 'blocks/contacts';
 
 
 

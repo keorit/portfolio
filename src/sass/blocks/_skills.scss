@@ -37,7 +37,6 @@
 			grid-template: minmax(21px, auto) 14px / 200px 35px;
 			align-content: space-between;
 			justify-content: space-between;
-			align-items: center;
 		}
 		&-title {
 			position: relative;
@@ -48,6 +47,7 @@
 			font-weight: 500;
 			font-size: 14px;
 			line-height: 21px;
+			justify-self: end;
 		}
 		&-line {
 			background-color: #e8e4de;
